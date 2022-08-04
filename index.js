@@ -9,9 +9,6 @@ function introductionWithLanguage(name, language){
 }
 
 // takes in two arguments, a name and a language, and language defaults to JavaScript
-function introductionWithLanguageOptional(name, language){
-    if(language === undefined){
-        return `Hi, my name is ${name} and I am learning to program in JavaScript.`;
-    }
+function introductionWithLanguageOptional(name, language='JavaScript'){
     return `Hi, my name is ${name} and I am learning to program in ${language}.`;
 }
